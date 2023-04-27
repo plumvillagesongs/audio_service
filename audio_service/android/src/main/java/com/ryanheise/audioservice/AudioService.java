@@ -620,8 +620,9 @@ public class AudioService extends MediaBrowserServiceCompat {
         return notificationBuilder;
     }
 
-    public void handleDeleteNxotification() {
-        if (listener == null) return;
+    public void handleDeleteNotification() {
+        if (listener == null)
+            return;
         listener.onClose();
     }
 
