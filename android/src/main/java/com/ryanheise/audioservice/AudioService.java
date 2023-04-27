@@ -616,7 +616,7 @@ public class AudioService extends MediaBrowserServiceCompat {
             ;
         }
         int iconId = getResourceId(config.androidNotificationIcon);
-        //notificationBuilder.setSmallIcon(iconId);
+        notificationBuilder.setSmallIcon(iconId);
         return notificationBuilder;
     }
 
