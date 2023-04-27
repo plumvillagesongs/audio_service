@@ -1006,6 +1006,12 @@ class AudioService {
     });
   }
 
+  static setCacheManager(
+    BaseCacheManager? cacheManager,
+  ) {
+    _cacheManager = cacheManager;
+  }
+
   static Future<void> _observeAndroidPlaybackInfo() async {
     await for (var playbackInfo in _handler.androidPlaybackInfo) {
       await _platform.setAndroidPlaybackInfo(SetAndroidPlaybackInfoRequest(
